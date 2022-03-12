@@ -7,8 +7,11 @@ This package uses recursive calling mechanism which can convert your nested obje
 Here are some screenshots of request body before and OUTPUT.
 
 Request Body Screenshot:
+
+
+![request_body](https://imgur.com/qoKpazi)
+
  
-opts_knit$set(base.url='https://imgur.com/qoKpazi"')
 
 
 
