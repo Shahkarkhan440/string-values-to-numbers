@@ -16,6 +16,18 @@ Null String => "null" => null
 Undefined String => "undefined" => "undefined" will be consider as string 
 ```
 
+
+USAGE:
+
+```
+const YourName = require("string-values-to-numbers")
+
+console.log( YourName(req.body) ) //will filter your request object and return object back
+
+```
+
+
+
 Here are some screenshots of request body before and OUTPUT.
 
 Request Body Screenshot:
