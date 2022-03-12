@@ -1,0 +1,35 @@
+{
+  "name": "string-values-to-numbers",
+  "version": "1.0.0",
+  "description": "This package will convert your string values/numbers in your request body to numbers either int,float,double. you dont need specifically to convert/parse to int float each time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahkarkhan440/string-values-to-numbers.git"
+  },
+  "keywords": [
+    "string",
+    "values",
+    "to",
+    "numbers",
+    "string",
+    "numbers",
+    "conversations",
+    "any",
+    "string",
+    "number",
+    "to",
+    "numbers",
+    "from",
+    "request"
+  ],
+  "author": "shahkar-khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahkarkhan440/string-values-to-numbers/issues"
+  },
+  "homepage": "https://github.com/Shahkarkhan440/string-values-to-numbers#readme"
+}
