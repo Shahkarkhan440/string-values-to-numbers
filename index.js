@@ -28,7 +28,7 @@ const stringObjectManipulation = (item) => {
     return item
 }
 
-exports.ConvertStringValues = (dataObject) => {
+module.exports.ConvertStringValues = (dataObject) => {
     try {
         Object.keys(dataObject).forEach((key) => {
             if (dataObject[key] === null || dataObject[key] === undefined || dataObject[key] === [] || dataObject[key] === {}) {
