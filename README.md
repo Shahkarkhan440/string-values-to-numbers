@@ -8,7 +8,10 @@ Here are some screenshots of request body before and OUTPUT.
 
 Request Body Screenshot:
 
-[img]https://i.imgur.com/qoKpazi.png[/img]
+```{r request_body}
+knitr::include_graphics("https://imgur.com/qoKpazi")
+```
+
 
 
 Output Screenshot:
