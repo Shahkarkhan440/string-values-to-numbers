@@ -8,16 +8,87 @@ Here are some screenshots of request body before and OUTPUT.
 
 Request Body Screenshot:
 
-
 ![request_body](https://i.imgur.com/qoKpazi.png)
+
 
  
 
-
-
 Output Screenshot:
 
-jasd
+![output_body](https://i.imgur.com/okpA5RN.png)
+
+
+
+
+REQUEST JSON:
+
+    {
+        a: 0,
+        b: {
+            c: "4",
+            d: 4.5
+        },
+
+        e: [
+            {
+                f: "4.1",
+                hel: [
+                    {
+                        name: "55",
+
+                    }
+                ]
+            },
+            {
+                g: "4"
+            },
+            4,
+            "Shahkar",
+            "Rizwan",
+            "5.4",
+            null,
+            undefined,
+            [],
+            {},
+            false
+
+        ],
+        h: [],
+        i: {},
+        k: true
+
+    }
+    
+
+
+OUTPUT JSON:
+{
+  a: 0,
+  b: {
+    c: 4,
+    d: 4.5
+  },
+  e: [
+    {
+      f: 4.1
+    },
+    {
+      g: 4
+    },
+    4,
+    "Shahkar",
+    "Rizwan",
+    5.4,
+    null,
+    null,
+    [],
+    {},
+    false
+  ],
+  h: [],
+  i: {},
+  k: true
+}
 
 
 
