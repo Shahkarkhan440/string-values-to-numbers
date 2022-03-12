@@ -22,44 +22,36 @@ Output Screenshot:
 
 REQUEST JSON:
 
-    {
-        a: 0,
-        b: {
-            c: "4",
-            d: 4.5
+ {
+    a: 0,
+    b: {
+        c: "4",
+        d: 4.5
+    },
+
+    e: [
+        {
+            f: "4.1"
         },
+        {
+            g: "4"
+        },
+        4,
+        "Shahkar",
+        "Rizwan",
+        "5.4",
+        null,
+        undefined,
+        [],
+        {},
+        false
 
-        e: [
-            {
-                f: "4.1",
-                hel: [
-                    {
-                        name: "55",
+    ],
+    h: [],
+    i: {},
+    k: true
 
-                    }
-                ]
-            },
-            {
-                g: "4"
-            },
-            4,
-            "Shahkar",
-            "Rizwan",
-            "5.4",
-            null,
-            undefined,
-            [],
-            {},
-            false
-
-        ],
-        h: [],
-        i: {},
-        k: true
-
-    }
-    
-
+}
 
 OUTPUT JSON:
 {
