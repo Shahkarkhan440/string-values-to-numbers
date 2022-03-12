@@ -8,8 +8,7 @@ Here are some screenshots of request body before and OUTPUT.
 
 Request Body Screenshot:
 
-[Imgur](https://i.imgur.com/qoKpazi.png)
-
+[img]https://i.imgur.com/qoKpazi.png[/img]
 
 
 Output Screenshot:
