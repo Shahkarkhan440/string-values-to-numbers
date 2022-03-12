@@ -20,11 +20,11 @@ Here are some screenshots of request body before and OUTPUT.
 
 Request Body Screenshot:
 
-![request_body](https://i.imgur.com/qoKpazi.png)
+![request_body](https://i.imgur.com/CvNcKwf.png)
 
 Output Screenshot:
 
-![output_body](https://i.imgur.com/okpA5RN.png)
+![output_body](https://i.imgur.com/mi7En5S.png)
 
 REQUEST BODY:
 
@@ -76,34 +76,43 @@ REQUEST BODY:
 OUTPUT BODY:
 
 ```javascript
-
 {
- a: 0,
- b: {
-   c: 4,
-   d: 4.5
- },
- e: [
-   {
-     f: 4.1
-   },
-   {
-     g: 4
-   },
-   4,
-   "Shahkar",
-   "Rizwan",
-   5.4,
-   null,
-   null,
-   [],
-   {},
-   false
- ],
- h: [],
- i: {},
- k: true
-}
-```
+    "a": true,
+    "b": {
+        "c": 4,
+        "d": 4.5
+    },
+    "e": [
+        {
+            "f": 4.1,
+            "g": {
+                "h": [
+                    {
+                        "i": 3.43
+                    },
+                    {
+                        "j": false
+                    }
+                ]
+            }
+        },
+        {
+            "k": 4
+        },
+        4,
+        "Shahkar",
+        "Rizwan",
+        5.4,
+        null,
+        null,
+        [],
+        {},
+        false
+    ],
+    "l": [],
+    "m": {},
+    "n": true,
+    "o": null
+}```
 
 For any suggestions & bugs reporting please comment issue's. or reach me at shahkarkhan02@gmail.com
