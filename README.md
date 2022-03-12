@@ -75,7 +75,7 @@ REQUEST BODY:
 
 OUTPUT BODY:
 
-```javascript
+````javascript
 {
     "a": true,
     "b": {
@@ -116,3 +116,4 @@ OUTPUT BODY:
 }```
 
 For any suggestions & bugs reporting please comment issue's. or reach me at shahkarkhan02@gmail.com
+````
