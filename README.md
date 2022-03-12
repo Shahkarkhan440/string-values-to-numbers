@@ -22,6 +22,7 @@ Output Screenshot:
 
 REQUEST JSON:
 
+ ```JSON
  {
     a: 0,
     b: {
@@ -53,7 +54,12 @@ REQUEST JSON:
 
 }
 
+```
+
 OUTPUT JSON:
+
+ ```JSON
+
 {
   a: 0,
   b: {
@@ -81,9 +87,8 @@ OUTPUT JSON:
   i: {},
   k: true
 }
+```
 
-
-
-For any suggestions & comments please raise issue. or reach us at shahkarkhan02@gmail.com
+For any suggestions & comments please comment issue. or reach us at shahkarkhan02@gmail.com
 
 
