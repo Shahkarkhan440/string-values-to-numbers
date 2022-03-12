@@ -20,7 +20,7 @@ Output Screenshot:
 
 
 
-REQUEST JSON:
+REQUEST BODY:
 
  ```javascript
  {
@@ -56,7 +56,7 @@ REQUEST JSON:
 
 ```
 
-OUTPUT JSON:
+OUTPUT BODY:
 
  ```javascript
 
