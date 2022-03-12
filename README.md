@@ -13,7 +13,7 @@ Boolean String:  "true"/"false"  => true/false
 
 Null String => "null" => null
 
-Undefined String => "undefined" => undefined
+Undefined String => "undefined" => "undefined" will be consider as string 
 ```
 
 Here are some screenshots of request body before and OUTPUT.
@@ -104,15 +104,16 @@ OUTPUT BODY:
         "Rizwan",
         5.4,
         null,
-        null,
+        "undefined",
         [],
         {},
         false
     ],
     "l": [],
     "m": {},
-    "n": true,
-    "o": null
+    "n": false,
+    "o": null,
+    "p": "undefined"
 }```
 
 For any suggestions & bugs reporting please comment issue's. or reach me at shahkarkhan02@gmail.com
