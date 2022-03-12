@@ -20,11 +20,11 @@ Here are some screenshots of request body before and OUTPUT.
 
 Request Body Screenshot:
 
-![request_body](https://i.imgur.com/qoKpazi.png)
+![request_body](https://i.imgur.com/CvNcKwf.png)
 
 Output Screenshot:
 
-![output_body](https://i.imgur.com/okpA5RN.png)
+![output_body](https://i.imgur.com/mi7En5S.png)
 
 REQUEST BODY:
 
