@@ -22,7 +22,7 @@ Output Screenshot:
 
 REQUEST JSON:
 
- ```JSON
+ ```javascript
  {
     a: 0,
     b: {
@@ -58,7 +58,7 @@ REQUEST JSON:
 
 OUTPUT JSON:
 
- ```JSON
+ ```javascript
 
 {
   a: 0,
