@@ -9,7 +9,7 @@ Here are some screenshots of request body before and OUTPUT.
 Request Body Screenshot:
 
 
-![request_body](https://imgur.com/qoKpazi)
+![request_body](https://i.imgur.com/qoKpazi.png)
 
  
 
