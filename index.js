@@ -13,14 +13,15 @@ const StringToNumber = (value) => {
 }
 
 const stringObjectManipulation = (item) => {
-    if (item == "true") {
-        item = item == "true"
-    } else if (item == "null") {
+    if (item === "true") {
+        item = true
+    }
+    else if (item === "false") {
+        item = false
+    } else if (item === "null") {
         item = null
     } else if (item == "undefined") {
-        item = undefined
-    } else if (item == "false") {
-        item = item == "true"
+        item = "undefined"
     } else {
         let temp = StringToNumber(item)
         item = temp
