@@ -1,112 +1,62 @@
-const StringToNumber = (value) => {
+// const exampleRequest = require("./request-example.json")
 
+const StringToNumber = (value) => {
     if (!isNaN(value)) {
         return Number(value)
     } else {
-
         let temp = Number(value)
-
         if (isNaN(temp)) {
-
             return value
         }
         return temp
     }
 }
 
-
-exports.StringValuesConvert = (dataObject) => {
-
-    Object.keys(dataObject).forEach((key) => {
-
-        if (dataObject[key] === null || dataObject[key] === undefined || dataObject[key] === [] || dataObject[key] === {}) {
-            return dataObject[key]
-        }
-
-        else if (typeof dataObject[key] === "string") {
-            let temp = StringToNumber(dataObject[key])
-            dataObject[key] = temp
-        }
-
-        else if (typeof dataObject[key] === "object") {
-
-            return StringValuesConvert(dataObject[key]);
-        }
-
-        else if (Array.isArray(dataObject[key])) {
-
-            if (dataObject[key] === null || dataObject[key] === undefined || dataObject[key] === [] || dataObject[key] === {}) {
-                return dataObject[key]
-            }
-
-            else if (typeof dataObject[key] === "object") {
-
-                StringValuesConvert(dataObject[key]);
-
-            } else if (typeof dataObject[key] === "string") {
-
-                let temp = StringToNumber(dataObject[key])
-                dataObject[key] = temp
-            }
-
-        }
-        else {
-            return dataObject[key]
-        }
-
-    })
-
-    return dataObject
+const stringObjectManipulation = (item) => {
+    if (item == "true") {
+        item = item == "true"
+    } else if (item == "null") {
+        item = null
+    } else if (item == "undefined") {
+        item = undefined
+    } else if (item == "false") {
+        item = item == "true"
+    } else {
+        let temp = StringToNumber(item)
+        item = temp
+    }
+    return item
 }
 
+exports.ConvertStringValues = (dataObject) => {
+    try {
+        Object.keys(dataObject).forEach((key) => {
+            if (dataObject[key] === null || dataObject[key] === undefined || dataObject[key] === [] || dataObject[key] === {}) {
+                return dataObject[key]
+            } if (typeof dataObject[key] === "string") {
+                dataObject[key] = stringObjectManipulation(dataObject[key])
+            } else if (typeof dataObject[key] === "object") {
+                return ConvertStringValues(dataObject[key]);
+            } else if (Array.isArray(dataObject[key])) {
+                if (dataObject[key] === null || dataObject[key] === undefined || dataObject[key] === [] || dataObject[key] === {}) {
+                    return dataObject[key]
+                } else if (typeof dataObject[key] === "object") {
+                    return ConvertStringValues(dataObject[key]);
+                } else if (typeof dataObject[key] === "string") {
+                    dataObject[key] = stringObjectManipulation(dataObject[key])
+                }
+            } else {
+                return dataObject[key]
+            }
+        })
+        return dataObject
+    } catch (error) {
+        return error
+    }
 
-//this is for you guts if you want to test  :) 
+}
 
-
-// console.log(StringValuesConvert(
-
-//     {
-//         a: 0,
-//         b: {
-//             c: "4",
-//             d: 4.5
-//         },
-
-//         e: [
-//             {
-//                 f: "4.1",
-//                 hel: [
-//                     {
-//                         name: "55",
-
-//                     }
-//                 ]
-//             },
-//             {
-//                 g: "4"
-//             },
-//             4,
-//             "Shahkar",
-//             "Rizwan",
-//             "5.4",
-//             null,
-//             undefined,
-//             [],
-//             {},
-//             false
-
-//         ],
-//         h: [],
-//         i: {},
-//         k: true
-
-//     }
-    
-//     )
-
-
-// )
-
-
+//if case if you want to test ..
+// console.log(ConvertStringValues(exampleRequest))
 
 
