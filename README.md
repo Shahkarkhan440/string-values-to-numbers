@@ -36,7 +36,7 @@ Request Body Screenshot:
 
 Output Screenshot:
 
-![output_body](https://i.imgur.com/LGdZeDs.png)
+![output_body](https://i.imgur.com/3MJXIy9.png)
 
 REQUEST BODY:
 
