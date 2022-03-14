@@ -1,6 +1,6 @@
 {
   "name": "string-values-to-numbers",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "This package will convert your string values/numbers in your request body to numbers either int,float,double. you dont need specifically to convert/parse to int float each time.",
   "main": "index.js",
   "scripts": {
