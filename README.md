@@ -13,8 +13,21 @@ Boolean String:  "true"/"false"  => true/false
 
 Null String => "null" => null
 
-Undefined String => "undefined" => undefined
+Undefined String => "undefined" => "undefined" will be consider as string
+
 ```
+
+
+USAGE:
+
+```
+const YourName = require("string-values-to-numbers")
+
+console.log( YourName(req.body) ) //will filter your request object and return object back
+
+```
+
+
 
 Here are some screenshots of request body before and OUTPUT.
 
@@ -24,7 +37,7 @@ Request Body Screenshot:
 
 Output Screenshot:
 
-![output_body](https://i.imgur.com/mi7En5S.png)
+![output_body](https://i.imgur.com/3MJXIy9.png)
 
 REQUEST BODY:
 
@@ -104,16 +117,17 @@ OUTPUT BODY:
         "Rizwan",
         5.4,
         null,
-        null,
+        "undefined",
         [],
         {},
         false
     ],
     "l": [],
     "m": {},
-    "n": true,
-    "o": null
-}```
+    "n": false,
+    "o": null,
+    "p": "undefined"
+}
+```
 
-For any suggestions & bugs reporting please comment issue's. or reach me at shahkarkhan02@gmail.com
-````
+For any suggestions & bugs reporting please comment issues. or reach me at shahkarkhan02@gmail.com
