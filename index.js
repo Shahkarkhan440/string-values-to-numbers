@@ -15,12 +15,11 @@ const StringToNumber = (value) => {
 const stringObjectManipulation = (item) => {
     if (item === "true") {
         item = true
-    }
-    else if (item === "false") {
+    } else if (item === "false") {
         item = false
     } else if (item === "null") {
         item = null
-    } else if (item == "undefined") {
+    } else if (item === "undefined") {
         item = "undefined"
     } else {
         let temp = StringToNumber(item)
@@ -31,15 +30,16 @@ const stringObjectManipulation = (item) => {
 
 const ConvertStringValues = (dataObject) => {
     try {
+        const emptyValues = new Set([null, undefined, [], {}])
         Object.keys(dataObject).forEach((key) => {
-            if (dataObject[key] === null || dataObject[key] === undefined || dataObject[key] === [] || dataObject[key] === {}) {
+            if (emptyValues.has(dataObject[key])) {
                 return dataObject[key]
             } if (typeof dataObject[key] === "string") {
                 dataObject[key] = stringObjectManipulation(dataObject[key])
             } else if (typeof dataObject[key] === "object") {
                 return ConvertStringValues(dataObject[key]);
             } else if (Array.isArray(dataObject[key])) {
-                if (dataObject[key] === null || dataObject[key] === undefined || dataObject[key] === [] || dataObject[key] === {}) {
+                if (emptyValues.has(dataObject[key])) {
                     return dataObject[key]
                 } else if (typeof dataObject[key] === "object") {
                     return ConvertStringValues(dataObject[key]);
